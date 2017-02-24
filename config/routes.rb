@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :questions, only: %i(index show new create)
+  resources :questions, only: %i(index show create)
 end
