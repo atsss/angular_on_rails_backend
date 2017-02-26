@@ -4,13 +4,10 @@ class QuestionsController < ApplicationController
   # GET /questions
   def index
     @questions = Question.all
-
-    render json: @questions
   end
 
   # GET /questions/1
   def show
-    render json: @question
   end
 
   # POST /questions
@@ -18,7 +15,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(question_params)
 
     if @question.save
-      render json: @question, status: :created, location: @question
+      render :show, status: :created, location: @question
     else
       render json: @question.errors, status: :unprocessable_entity
     end
