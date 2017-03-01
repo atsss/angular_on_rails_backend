@@ -6,10 +6,6 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-  # GET /questions/1
-  def show
-  end
-
   # POST /questions
   def create
     @question = Question.new(question_params)

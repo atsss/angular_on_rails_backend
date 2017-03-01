@@ -7,11 +7,6 @@ class AnswersController < ApplicationController
     @answers = Answer.all
   end
 
-  # GET /answers/1
-  # GET /answers/1.json
-  def show
-  end
-
   # POST /answers
   # POST /answers.json
   def create
@@ -32,12 +27,6 @@ class AnswersController < ApplicationController
     else
       render json: @answer.errors, status: :unprocessable_entity
     end
-  end
-
-  # DELETE /answers/1
-  # DELETE /answers/1.json
-  def destroy
-    @answer.destroy
   end
 
   private
