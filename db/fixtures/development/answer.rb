@@ -1,42 +1,42 @@
-Question.seed(:id,
+Answer.seed(:id,
   {
     :id => 1,
-    :title => 'angular2 is fun？',
+    :question_id => 1,
     :content => <<~EOT
   test test
   EOT
   },
   {
     :id => 2,
-    :title => 'rails5 is uesful?',
+    :question_id => 1,
     :content => <<~EOT
     test test
   EOT
   },
   {
     :id => 3,
-    :title => 'how can i get up early?',
+    :question_id => 1,
     :content => <<~EOT
     test test
   EOT
   },
   {
     :id => 4,
-    :title => 'hogehoge',
+    :question_id => 2,
     :content => <<~EOT
     test test
   EOT
   },
   {
     :id => 5,
-    :title => 'fugafuga',
+    :question_id => 2,
     :content => <<~EOT
     test test
   EOT
   },
   {
     :id => 6,
-    :title => 'piyopiyo',
+    :question_id => 3,
     :content => <<~EOT
     test test
   EOT
