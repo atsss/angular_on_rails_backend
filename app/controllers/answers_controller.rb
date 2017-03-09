@@ -16,7 +16,7 @@ class AnswersController < ApplicationController
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      render :show, status: :created
+      render :show, status: :created, location: @question
     else
       render json: @answer.errors, status: :unprocessable_entity
     end
