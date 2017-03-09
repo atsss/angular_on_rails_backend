@@ -7,13 +7,16 @@ class AnswersController < ApplicationController
     @answers = Answer.all
   end
 
+  def show
+  end
+
   # POST /answers
   # POST /answers.json
   def create
     @answer = Answer.new(answer_params)
 
     if @answer.save
-      render :show, status: :created, location: @answer
+      render :show, status: :created
     else
       render json: @answer.errors, status: :unprocessable_entity
     end
